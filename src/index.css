@@ -1,0 +1,26 @@
+.center {
+    text-align: center;
+}
+/*
+padding: 3%; added
+*/
+.tasks-container-box {
+    border: 8px solid green;
+    padding: 3%;
+}
+
+.tasks-container {
+    max-width: 33%;
+    width: 33%;
+}
+/*
+display: block; removed
+*/
+.task-text {
+    word-wrap: break-word;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-evenly;
+}
