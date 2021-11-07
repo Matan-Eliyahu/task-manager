@@ -30,8 +30,8 @@ const Task = ({task, moveTask, isChecked}) => {
     }
     return (
         <>
-            <span className="task-text">{task.Text} - </span>
-            <span style={{ color: OnColor() }}>{task.Priority}</span>
+            <span className="task-text">{task.text} - </span>
+            <span style={{ color: OnColor() }}>{task.priority}</span>
             <input type="checkbox" onChange={handleTask} checked={isChecked}></input>
         </>
     )

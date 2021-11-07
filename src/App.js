@@ -28,7 +28,7 @@ const App = () => {
   const updateTask = (taskId, value) => {
     console.log("TasksId to change", taskId)
     axios.put(serverIp + "/api/tasks/"+ taskId, {
-      "Checked": value
+      "checked": value
     })
   }
 
@@ -39,7 +39,7 @@ const App = () => {
       var tToDo = []
 
       allTasks.map((task) => {
-        if (task.Checked) {
+        if (task.checked) {
           tCompleted.push(task)
         }
         else {
@@ -55,7 +55,7 @@ const App = () => {
 
   const onAdd = (text, priority) => {
     var taskId = uuid();
-    var newTask = {Text: text, Priority: priority, Checked: false, id: taskId}
+    var newTask = {text: text, priority: priority, checked: false, id: taskId}
     setTasksToDo([...tasksToDo, newTask])
     postTask(newTask)
     console.log("Tasks To Do - ", tasksToDo)
