@@ -7,7 +7,7 @@ const TasksContainer = ({tasksContainer, moveTask, text, defaultChecked}) => {
 			
 			<div className="tasks-container-box" id="tasks_container">
 				{tasksContainer.map((task) =>
-					<div key={task.Id}>
+					<div key={task.id}>
 						<Task task={task} moveTask={moveTask} isChecked={defaultChecked}></Task>
 					</div>
 				)}
